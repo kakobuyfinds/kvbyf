@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>BoonBuy spreadsheet – skor, QC och storleksguide</title>
+  <meta name="description" content="En svensk guide till BoonBuy spreadsheet. Hitta kategorier på CAFANS och jämför storlekar, produktlänkar, QC-bilder och frakt till Sverige.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <!-- Sökordsunderlag: tio unika domäner från tillgängliga sökresultat. Googles exakta förstasida kunde inte verifieras.
+       Domäner: sheetsboonbuy.com, boonbuyspreadsheet.page, boonspreadsheet.com, spreadsheetboonbuy.com,
+       ssfinds.com, boonbuyfinds.net, boonbuysheet.rent, boonbuy-spreadsheets.com, boonbuy.me, boonbuy-spreadsheet.com.
+       Sekundära sökord: BoonBuy skor, BoonBuy QC-bilder, BoonBuy storleksguide, BoonBuy frakt till Sverige.
+       Längre sökfraser: sneakers i EU-storlekar; storlekstabell för skor; innersulans längd; skor för breda fötter;
+       mäta båda fötterna; huvtröjans bröstbredd; ärmlängd på huvtröja; plagglängd för t-shirt;
+       mäta midjevidd; innerbenslängd på byxor; olika storlekar i klädset; kvalitetsbilder på vald färgvariant;
+       närbilder på sula och sömmar; kontrollera jackans foder; mått på huvudomkretsen; paketets mått och vikt;
+       volymvikt för skor; fraktalternativ för Sverige; totalsumma i svenska kronor; spara produktlänkar;
+       axelbredd på matchtröja; remmens längd på väska; närbilder på smyckeslås; returfrakt vid storleksbyte. -->
+  <style>
+    :root{color-scheme:light;--paper:#f7f4ec;--ink:#24243b;--muted:#565369;--line:#dbd5e0;--accent:#42246a;--lavender:#ede4fa}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+    a{color:var(--accent);text-underline-offset:.2em}
+    a:focus-visible,summary:focus-visible{outline:3px solid #7651a9;outline-offset:4px}
+    .wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}
+    header,footer{border-block:1px solid var(--line);padding:.75rem 0}
+    header a{font-weight:800;text-decoration:none}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.15}
+    h1{font-size:clamp(2.45rem,7vw,5rem);letter-spacing:-.05em}
+    h2{font-size:clamp(1.55rem,4vw,2.3rem);letter-spacing:-.025em}
+    h3{font-size:1.12rem}
+    p{margin-top:.65rem}
+    .intro{display:grid;grid-template-columns:1.15fr 1fr;align-items:center;gap:clamp(1rem,4vw,3.5rem);padding:1.4rem 0}
+    .intro p{max-width:52ch}
+    .button{display:inline-block;background:var(--accent);color:white;border-radius:.4rem;padding:.65rem 1rem;margin-top:1rem;font-weight:700}
+    .hero{background:var(--lavender);border-radius:.75rem;overflow:hidden}
+    img{display:block;width:100%;height:auto}
+    .hero img{aspect-ratio:16/9;object-fit:contain;background:#fff}
+    figcaption{padding:.55rem .75rem;color:var(--muted);font-size:.86rem}
+    nav,section{padding:1.25rem 0;border-top:1px solid var(--line)}
+    .categories,.gallery,.topics{display:grid;gap:.75rem;margin-top:1rem}
+    .categories{grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr));list-style:none;padding:0;margin-bottom:0}
+    .categories a{display:block;height:100%;background:var(--lavender);border-radius:.4rem;padding:.65rem .8rem;font-weight:700}
+    .gallery{grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr))}
+    .gallery figure,.topics article{background:#fff;border:1px solid var(--line);border-radius:.55rem;overflow:hidden}
+    .gallery img{aspect-ratio:1;object-fit:contain;background:#f5f3f4}
+    .topics{grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr))}
+    .topics article{padding:1rem}
+    .note,footer{color:var(--muted)}
+    .checklist{padding-left:1.3rem;max-width:76ch}
+    .checklist li+li{margin-top:.45rem}
+    details{border-bottom:1px solid var(--line);padding:.75rem 0}
+    summary{cursor:pointer;font-weight:750}
+    details p{max-width:72ch}
+    @media(max-width:650px){.intro{grid-template-columns:1fr}.hero img{aspect-ratio:2}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "BoonBuy spreadsheet – skor, QC och storleksguide",
+        "inLanguage": "sv",
+        "description": "En svensk guide till BoonBuy spreadsheet. Hitta kategorier på CAFANS och jämför storlekar, produktlänkar, QC-bilder och frakt till Sverige.",
+        "mainEntity": {"@id": "#fragor"}
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "#fragor",
+        "name": "Vanliga frågor",
+        "inLanguage": "sv",
+        "mainEntity": [
+          {"@type":"Question","name":"Vad betyder BoonBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Det är ett sökuttryck för en lista där produktlänkar kan sorteras efter kategori. Listor kan också innehålla information om storlek, pris och kvalitetsbilder."}},
+          {"@type":"Question","name":"Vart leder länkarna i den här guiden?","acceptedAnswer":{"@type":"Answer","text":"Kategorierna öppnar motsvarande avdelningar hos CAFANS. Övriga länkar öppnar CAFANS startsida."}},
+          {"@type":"Question","name":"Vad kan en QC-bild visa?","acceptedAnswer":{"@type":"Answer","text":"En QC-bild kan visa synliga detaljer som färg, sömmar och etiketter. Be om en närbild eller en bild med måttband om du behöver kontrollera en viss detalj."}},
+          {"@type":"Question","name":"Hur jämför jag storlekar när måtten anges i centimeter?","acceptedAnswer":{"@type":"Answer","text":"Mät en sko eller ett plagg som passar dig och jämför samma måttpunkt i tabellen. Kontrollera om ett breddmått gäller plagget liggande plant eller hela omkretsen."}},
+          {"@type":"Question","name":"Vad ska jag kontrollera inför frakt till Sverige?","acceptedAnswer":{"@type":"Answer","text":"Välj Sverige som destination och kontrollera paketets vikt, mått och fraktalternativ. Jämför totalsumman i kronor och kontrollera vilka eventuella avgifter som ingår."}}
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/kvbyf/">
+</head>
+<body>
+  <header><div class="wrap"><a href="https://www.cafans.com">CAFANS</a></div></header>
+  <main class="wrap">
+    <div class="intro">
+      <div>
+        <h1>BoonBuy spreadsheet</h1>
+        <p>Ett BoonBuy spreadsheet är en produktlista som hjälper dig att jämföra länkar, storlekar och kvalitetsbilder. I den här fristående guiden hittar du kategorier hos CAFANS och konkreta saker att kontrollera före ett köp.</p>
+        <a class="button" href="https://www.cafans.com">Öppna CAFANS</a>
+      </div>
+      <figure class="hero">
+        <img src="https://nikeclprod.vtexassets.com/arquivos/ids/160793/CW2288_111_A_PREM.jpg?v=637654399803530000" width="800" height="450" alt="Vit Nike Air Force 1 ’07 sedd från sidan med vit sula och perforerad tåbox" fetchpriority="high" decoding="async">
+        <figcaption>Nike Air Force 1 ’07 · bild från Nike Chile</figcaption>
+      </figure>
+    </div>
+
+    <nav aria-labelledby="kategorier">
+      <h2 id="kategorier">Bläddra efter kategori</h2>
+      <ul class="categories">
+        <li><a href="https://cafans.com/category-911-Shoes.html">Skor</a></li>
+        <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Huvtröjor och tröjor</a></li>
+        <li><a href="https://cafans.com/category-913-T-Shirts.html">T-shirts</a></li>
+        <li><a href="https://cafans.com/category-914-Jackets.html">Jackor</a></li>
+        <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Byxor och shorts</a></li>
+        <li><a href="https://cafans.com/category-916-Headwear.html">Huvudbonader</a></li>
+        <li><a href="https://cafans.com/category-917-Sets.html">Klädset</a></li>
+        <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Underkläder</a></li>
+        <li><a href="https://cafans.com/category-919-Jersey.html">Matchtröjor</a></li>
+        <li><a href="https://cafans.com/category-920-Accessories.html">Accessoarer</a></li>
+      </ul>
+    </nav>
+
+    <section aria-labelledby="bilder">
+      <h2 id="bilder">Detaljer att titta efter</h2>
+      <p class="note">Referensbilder från respektive varumärke. Kontrollera sortiment och produktutförande på respektive produktsida.</p>
+      <div class="gallery">
+        <figure>
+          <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/b31c6567-78d4-41b3-b463-ef15c36b7e0d/M%2BNK%2BCLUB%2BFT%2BPO%2BHOODIE.png" width="592" height="592" loading="lazy" decoding="async" alt="Modell i svart Nike Club-huvtröja med känguruficka">
+          <figcaption>Nike · mudd och ficka</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Beige Gucci-keps med GG-mönster och bruna detaljer">
+          <figcaption>Gucci · skärm och kantband</figcaption>
+        </figure>
+        <figure>
+          <img src="https://it.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-bandeau-lv-journey--M96769_PM1_Cropped%20worn%20view.jpg" width="480" height="480" loading="lazy" decoding="async" alt="Pastellfärgad Louis Vuitton-scarf knuten runt handtaget på en monogramväska">
+          <figcaption>Louis Vuitton · scarf och väskhandtag</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.hermes.com/is/image/hermesproduct/%E3%82%AB%E3%83%AC-90-%E3%80%8A%E3%81%99%E3%81%B9%E3%81%A6%E3%81%AF%E9%9E%8D%E3%81%AE%E4%B8%AD%E3%81%AB%E3%80%8B--004204S%2005-flat-wm-3-0-0-1000-1000_g.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="Marinblå Hermès Carré 90-scarf med tolv illustrerade sadlar">
+          <figcaption>Hermès · mönster och kant</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/E1594CDNMTD300_SBG_E01-34?%24r9x10_raw%24=&amp;crop=0%2C0%2C4000%2C5000&amp;hei=500&amp;scale=1&amp;wid=460" width="460" height="500" loading="lazy" decoding="async" alt="Dior CD Navy-stiftörhängen med guldfärgat CD-monogram">
+          <figcaption>Dior · örhängenas form och finish</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section aria-labelledby="guider">
+      <h2 id="guider">Guider för att jämföra produkter</h2>
+      <div class="topics">
+        <article>
+          <h3>BoonBuy skor och storlekar</h3>
+          <p>När du jämför sneakers i EU-storlekar, mät båda fötterna och utgå från den längre. Använd modellens storlekstabell för skor och kontrollera hur innersulans längd anges. För en bred fot kan ett mått över framfoten vara mer användbart än en bild av skon från sidan.</p>
+        </article>
+        <article>
+          <h3>BoonBuy storleksguide för kläder</h3>
+          <p>Jämför huvtröjans bröstbredd och ärmlängd med en tröja som sitter bra. För t-shirts är plagglängden ofta avgörande. Mät midjevidd och innerbenslängd på ett par egna byxor. Kontrollera också om överdel och underdel i ett klädset kan väljas i olika storlekar.</p>
+        </article>
+        <article>
+          <h3>Så läser du BoonBuy QC-bilder</h3>
+          <p>Be om kvalitetsbilder på den färgvariant och storlek du valt. För skor är närbilder på sulan och sömmarna användbara. På en jacka kan du kontrollera dragkedjan och fodret, och på en keps kan du be om en bild av spännet eller ett mått på huvudomkretsen.</p>
+        </article>
+        <article>
+          <h3>BoonBuy frakt till Sverige</h3>
+          <p>Skriv upp varupriset och jämför fraktalternativen för Sverige. Fråga efter paketets mått och vikt för att se om volymvikten påverkar frakten. Kontrollera om skokartongen ingår och vilka avgifter som ingår i totalsumman när du räknar om till svenska kronor.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="check">
+      <h2 id="check">Checklista för sparade produktlänkar</h2>
+      <ol class="checklist">
+        <li><strong>Kontrollera produktlänken.</strong> Stäm av modellnamn, färg och variant när du öppnar säljarens sida igen.</li>
+        <li><strong>Spara relevanta mått.</strong> För en matchtröja kan det vara axelbredd och rygglängd. För en väska kan det vara bredd, djup och remmens längd.</li>
+        <li><strong>Jämför bilder från flera vinklar.</strong> För smycken kan bilder på lås och baksida ge bättre underlag än en ensam frontbild. En bild räcker inte för att fastställa äkthet.</li>
+        <li><strong>Läs returvillkoren.</strong> Ta reda på hur du kan byta storlek, när tidsfristen börjar och vem som betalar returfrakten.</li>
+      </ol>
+    </section>
+
+    <section id="fragor" aria-labelledby="faq">
+      <h2 id="faq">Vanliga frågor</h2>
+      <details open>
+        <summary>Vad betyder BoonBuy spreadsheet?</summary>
+        <p>Det är ett sökuttryck för en lista där produktlänkar kan sorteras efter kategori. Listor kan också innehålla information om storlek, pris och kvalitetsbilder.</p>
+      </details>
+      <details>
+        <summary>Vart leder länkarna i den här guiden?</summary>
+        <p>Kategorierna öppnar motsvarande avdelningar hos CAFANS. Övriga länkar öppnar CAFANS startsida.</p>
+      </details>
+      <details>
+        <summary>Vad kan en QC-bild visa?</summary>
+        <p>En QC-bild kan visa synliga detaljer som färg, sömmar och etiketter. Be om en närbild eller en bild med måttband om du behöver kontrollera en viss detalj.</p>
+      </details>
+      <details>
+        <summary>Hur jämför jag storlekar när måtten anges i centimeter?</summary>
+        <p>Mät en sko eller ett plagg som passar dig och jämför samma måttpunkt i tabellen. Kontrollera om ett breddmått gäller plagget liggande plant eller hela omkretsen.</p>
+      </details>
+      <details>
+        <summary>Vad ska jag kontrollera inför frakt till Sverige?</summary>
+        <p>Välj Sverige som destination och kontrollera paketets vikt, mått och fraktalternativ. Jämför totalsumman i kronor och kontrollera vilka eventuella avgifter som ingår.</p>
+      </details>
+    </section>
+  </main>
+  <footer><div class="wrap">Fristående svensk guide · Kategorilänkar till <a href="https://www.cafans.com">CAFANS</a></div></footer>
+</body>
+</html>
